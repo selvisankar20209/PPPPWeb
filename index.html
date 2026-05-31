@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phoenix Innovative Computer Center</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!--<link rel="stylesheet" href="styles/feature.css">-->
+<style>
+
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+    background:#fff;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+    word-wrap: break-word;
+}
+/*.navbar-brand span{
+    white-space:normal;
+}
+*/
+/* ================= NAVBAR ================= */
+
+.navbar-fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:#01011A !important;
+    backdrop-filter:blur(8px);
+    padding:10px 0;
+}
+
+.navbar-brand{
+    display:flex;
+    align-items:center;
+    color:#fff !important;
+    font-weight:600;
+    font-size:18px;
+    max-width: 70%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.navbar-brand span
+{
+    white-space: nowrap;
+}
+.navbar-brand img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
+
+.navbar-nav .nav-link{
+    color:#fff !important;
+    font-size:16px;
+    margin-right:10px;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#ff5e14 !important;
+}
+
+.dropdown-menu{
+    border:none;
+    border-radius:10px;
+    padding:10px 0;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.dropdown-item{
+    padding:10px 20px;
+    transition:0.3s;
+}
+
+.dropdown-item:hover{
+    background:#e60000;
+    color:#fff;
+}
+
+.btn-support{
+    background:#e60000;
+    color:#fff;
+    border-radius:30px;
+    padding:10px 20px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn-support:hover{
+    background:#fff;
+    color:#e60000;
+}
+
+/* Mobile Navbar */
+@media(max-width:992px){
+
+    .navbar-collapse{
+        background:#01011A;
+        padding:20px;
+        border-radius:10px;
+        margin-top:10px;
+    }
+
+    .navbar-nav{
+        text-align:center;
+    }
+
+    .navbar-nav .nav-link{
+        margin:10px 0;
+    }
+
+    .btn-support{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    
+}
+/* Small Mobile */
+@media(max-width:576px){
+
+    .navbar-brand img{
+        width:35px;
+        height:35px;
+    }
+     .navbar-brand{
+        max-width:75%;
+    }
+     
+   
+
+}
+
+/* ================= SLIDER ================= */
+
+.slider{
+    width:100%;
+    padding-top:75px;
+}
+
+/* Swiper Full */
+.swiper,
+.swiper-wrapper,
+.swiper-slide{
+    width:100%;
+}
+.slider,
+.swiper,
+.swiper-slide,
+.testimonial-section{
+    position: relative;
+    z-index: 1;
+}
+.testimonial-slider{
+    overflow: hidden;
+    padding: 20px 10px;
+}
+.testimonial-slider .swiper-slide{
+    height: auto;
+}
+
+.single-testimonial{
+    height: 100%;
+}
+
+.single-testimonial video{
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    background: #000;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .single-testimonial video{
+        max-height: 400px;
+    }
+
+}
+
+/* Small mobile */
+@media(max-width:576px){
+
+    .single-testimonial video{
+        max-height: 350px;
+    }
+
+}
+.container{
+    padding-left:15px;
+    padding-right:15px;
+}
+/* DEFAULT HEIGHT (PC) */
+.slider{
+    min-height:90vh;
+}
+
+/* LAPTOP */
+@media(max-width:1200px){
+    .slider{
+        min-height:70vh;
+    }
+    
+}
+
+/* TABLET / NOTEBOOK */
+@media(max-width:992px){
+    .slider{
+        min-height:65vh;
+    }
+    .navbar-brand{
+        max-width:50%;
+    }
+    .navbar-brand span{
+        font-size:15px;
+    }
+}
+
+/* TABLET */
+@media(max-width:768px){
+    .slider{
+        min-height:50vh;
+    }
+    .navbar-brand{
+        max-width:50%;
+    }
+    .navbar-brand span{
+        font-size:15px;
+    }
+    /*.feature-section{
+        flex-direction: row;
+    }*/
+}
+
+/* MOBILE */
+@media(max-width:576px){
+    .slider{
+        min-height:38vh;
+    }
+    .navbar-brand{
+        max-width:50%;
+   }
+   .navbar-brand span{
+        font-size:15px;
+    }
+}
+
+/* SMALL MOBILE */
+@media(max-width:400px){
+    .slider{
+        min-height:38vh;
+    }
+    
+}
+
+/* ================= SLIDE ================= */
+
+.slide{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+    position:relative;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.content{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    z-index:2;
+}
+
+.content h1{
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.content p{
+    font-size:20px;
+}
+.banner-btn a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 25px;
+    background: #ff5e14;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.banner-btn a:hover {
+    background: #e04b0f;
+}
+
+/* Social icons */
+.social-icon-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon-list a {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icon-list a:hover {
+    color: #e60000;
+}
+/* Responsive Text */
+@media(max-width:992px){
+
+    .content h1{
+        font-size:40px;
+    }
+
+    .content p{
+        font-size:16px;
+    }
+     .navbar-brand span{
+            font-size: 15px;
+    }
+}
+
+@media(max-width:576px){
+
+    .content h1{
+        font-size:26px;
+    }
+
+    .content p{
+        font-size:14px;
+    }
+    .slider{
+        padding-top:60px;
+    }
+    .navbar-brand span{
+            font-size: 15px;
+    }
+
+}
+
+/* ================= FEATURE SECTION ================= */
+
+
+.feature-section{
+    padding:100px 0;
+    background:#f8f9fa;
+    
+    /*flex-direction: row;*/
+    
+}
+
+.feature-single-item{
+    text-align:center;
+    padding:30px 20px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+    transition:all 0.4s ease;
+    overflow:hidden;
+    position:relative;
+    height:100%;
+    
+}
+
+
+
+
+.feature-single-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 35px rgba(0,0,0,0.15);
+}
+
+.feature-single-item img{
+    width:60px;
+    margin-bottom:20px;
+}
+
+.feature-single-item h3{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:15px;
+    color:#333;
+}
+
+.feature-single-item p{
+    font-size:15px;
+    color:#555;
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.feature-btn-box .read-more{
+    text-decoration:none;
+    color:#ff5e14;
+    font-weight:600;
+    transition:0.3s;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.feature-btn-box .read-more:hover{
+    color:#e04b0f;
+}
+
+.extra-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s ease, opacity 0.5s ease;
+    opacity:0;
+    margin-top:10px;
+    text-align:center;
+    color:#444;
+    font-size:14px;
+}
+
+.feature-single-item.expanded .extra-content{
+    max-height:500px;
+    opacity:1;
+}
+/* ==================================================
+   RESPONSIVE DESIGN
+================================================== */
+
+/* Large Desktop Screens */
+@media (min-width: 1400px) {
+
+    .feature-section {
+        padding: 120px 0;
+    }
+
+    .feature-single-item {
+        padding: 40px 30px;
+    }
+
+    .feature-single-item h3 {
+        font-size: 26px;
+    }
+
+    .feature-single-item p {
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+    .feature-single-item img {
+        width: 75px;
+    }
+}
+
+
+/* Laptop Screens */
+@media (max-width: 1200px) {
+
+    .feature-section {
+        padding: 90px 0;
+    }
+
+    .feature-single-item {
+        padding: 28px 20px;
+    }
+
+    .feature-single-item h3 {
+        font-size: 22px;
+    }
+
+    .feature-single-item p {
+        font-size: 15px;
+    }
+}
+
+
+/* Notebook / Small Laptop */
+@media (max-width: 992px) {
+
+    .feature-section {
+        padding: 70px 0;
+    }
+
+    .feature-single-item {
+        margin-bottom: 25px;
+        padding: 25px 18px;
+    }
+
+    .feature-single-item img {
+        width: 55px;
+    }
+
+    .feature-single-item h3 {
+        font-size: 20px;
+    }
+
+    .feature-single-item p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+
+    .feature-section {
+        padding: 60px 0;
+    }
+
+    .feature-single-item {
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    .feature-single-item img {
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .feature-single-item h3 {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .feature-single-item p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+     .feature-section .row {
+        row-gap: 20px;
+    }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+
+    .feature-section {
+        padding: 50px 15px;
+    }
+
+    .feature-single-item {
+        padding: 22px 15px;
+        margin-bottom: 20px;
+    }
+
+    .feature-single-item img {
+        width: 45px;
+    }
+
+    .feature-single-item h3 {
+        font-size: 18px;
+    }
+
+    .feature-single-item p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .feature-btn-box .read-more {
+        font-size: 14px;
+    }
+     .feature-section .row {
+        row-gap: 20px;
+    }
+}
+.feature-section .row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.feature-section .col-lg-4{
+    display:flex;
+}
+
+.feature-single-item{
+    width:100%;
+}
+/*about section*/
+ /* ================================
+   ABOUT SECTION RESPONSIVE CSS
+================================ */
+
+/* Default Desktop Styles */
+.about-area {
+    padding: 80px 0;
+    background-color: #f9f9f1;
+}
+
+.sub-title {
+    color: #e60000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item h6 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.skill-progress {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progres {
+    height: 100%;
+    background: #e60000;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+.about-btn-box {
+    margin-top: 30px;
+}
+
+.default-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #e60000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.default-btn:hover {
+    background: #e43d1f;
+}
+
+.about-image {
+    position: relative;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.years-design {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e60000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+}
+
+.years-design h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.years-design h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.extra-content {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+}
+.about-image{
+    overflow:hidden;
+}
+
+/* ======================================
+   LARGE DESKTOP / PC (1400px and above)
+====================================== */
+@media only screen and (min-width: 1400px) {
+
+    .about-content h2 {
+        font-size: 42px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .years-design {
+        width: 220px;
+        padding: 25px;
+    }
+
+    .years-design h2 {
+        font-size: 50px;
+    }
+}
+
+
+/* ======================================
+   LAPTOP (1024px - 1399px)
+====================================== */
+@media only screen and (max-width: 1399px) {
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .years-design {
+        width: 180px;
+    }
+}
+
+
+/* ======================================
+   NOTEBOOK / SMALL LAPTOP (768px - 1023px)
+====================================== */
+@media only screen and (max-width: 1023px) {
+
+    .about-area {
+        padding: 70px 0;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .years-design {
+        width: 160px;
+        padding: 18px;
+    }
+
+    .years-design h2 {
+        font-size: 34px;
+    }
+
+    .years-design h5 {
+        font-size: 14px;
+    }
+}
+
+
+/* ======================================
+   TABLET (576px - 767px)
+====================================== */
+@media only screen and (max-width: 767px) {
+
+    .about-area {
+        padding: 60px 0;
+    }
+
+    .about-content {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .skill-item h6 {
+        font-size: 14px;
+    }
+
+    .default-btn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+
+    .years-design {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        margin: 20px auto 0;
+        width: 150px;
+    }
+
+    .years-design h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* ======================================
+   MOBILE DEVICES (575px and below)
+====================================== */
+@media only screen and (max-width: 575px) {
+
+    .about-area {
+        padding: 50px 15px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .skills {
+        margin-top: 25px;
+    }
+
+    .skill-item {
+        margin-bottom: 18px;
+    }
+
+    .skill-item h6 {
+        font-size: 13px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .skill-progress {
+        height: 8px;
+    }
+
+    .default-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .about-image img {
+        border-radius: 8px;
+    }
+
+    .years-design {
+        width: 140px;
+        padding: 15px;
+    }
+
+    .years-design h2 {
+        font-size: 26px;
+    }
+
+    .years-design h5 {
+        font-size: 13px;
+    }
+}
+/*testimonial*/
+body {
+            font-family: Arial;
+            background: #f9f9f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .testimonial-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .section-title h6 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            
+        }
+    
+
+        .testimonial-swiper {
+            padding: 20px 0;
+        }
+
+        .single-testimonial {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .single-testimonial video {
+            width: 100%;
+            max-height: 340px; /* adjust as needed */
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .single-testimonial h3 {
+            margin: 15px 0 5px;
+            font-size: 20px;
+        }
+
+        .single-testimonial span {
+            color: #ff5e14;
+            font-size: 16px;
+        }
+
+        .rating-box {
+            color: gold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .single-testimonial video {
+                max-height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .single-testimonial video {
+                max-height: 180px;
+            }
+        }
+        /* =========================
+   SERVICES SECTION
+========================= */
+
+.services-section{
+    padding:100px 0;
+    background:#f8f9fa;
+}
+
+.single-services-item{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:12px;
+    text-align:center;
+    margin-bottom:30px;
+    transition:0.4s;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    height:100%;
+}
+/* Services row spacing */
+
+.services-section .row{
+    row-gap:30px;
+}
+.single-services-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.services-icon{
+    width:80px;
+    height:80px;
+    background:#e60000;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    border-radius:50%;
+    font-size:32px;
+}
+
+.single-services-item h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.single-services-item p{
+    color:#666;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.services-btn{
+    margin-top:20px;
+}
+
+.read-more{
+    text-decoration:none;
+    color:#ff5e14;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.read-more:hover{
+    color:#e04b0f;
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media(min-width:1400px){
+
+    .caption h1{
+        font-size:70px;
+    }
+
+    .caption p{
+        font-size:24px;
+    }
+
+    .single-services-item{
+        padding:40px 30px;
+    }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media(max-width:1200px){
+
+    .caption h1{
+        font-size:50px;
+    }
+
+    .caption p{
+        font-size:18px;
+    }
+}
+
+/* =========================
+   TABLET / NOTEBOOK
+========================= */
+
+@media(max-width:992px){
+
+    .navbar-collapse{
+        background:#000;
+        padding:20px;
+        border-radius:10px;
+        margin-top:10px;
+    }
+
+    .nav-link{
+        margin:10px 0;
+    }
+
+    .btn-support{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    .header-image{
+        height:50vh;
+    }
+
+    .caption h1{
+        font-size:42px;
+    }
+
+    .caption p{
+        font-size:17px;
+    }
+
+    .services-section{
+        padding:80px 0;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:768px){
+
+    .header-image{
+        height:45vh;
+    }
+
+    .caption h1{
+        font-size:34px;
+    }
+
+    .caption p{
+        font-size:15px;
+    }
+
+    .single-services-item{
+        padding:30px 20px;
+    }
+
+    .services-icon{
+        width:70px;
+        height:70px;
+        font-size:28px;
+    }
+
+    .single-services-item h3{
+        font-size:22px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:576px){
+
+    .navbar-brand img{
+        height:40px;
+    }
+
+    .header-image{
+        height:40vh;
+    }
+
+    .caption{
+        padding:15px;
+    }
+
+    .caption h1{
+        font-size:28px;
+    }
+
+    .caption p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .services-section{
+        padding:60px 15px;
+    }
+
+    .single-services-item{
+        padding:25px 18px;
+    }
+
+    .single-services-item h3{
+        font-size:20px;
+    }
+
+    .single-services-item p{
+        font-size:14px;
+    }
+
+    .services-icon{
+        width:65px;
+        height:65px;
+        font-size:25px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:400px){
+
+    .caption h1{
+        font-size:24px;
+    }
+
+    .caption p{
+        font-size:13px;
+    }
+
+    .btn-support{
+        font-size:14px;
+        padding:10px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo">
+          <span class="ms-2">Phoenix</span>
+
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" role="button">
+                        Home
+                    </a>
+                    <!--<ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Home 1</a></li>
+                        <li><a class="dropdown-item" href="#">Home 2</a></li>
+                    </ul>-->
+                </li>
+
+                <!-- About -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button">
+                        About
+                    </a>
+                    <!--<ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Team</a></li>
+                    </ul>-->
+                </li>
+
+                <!-- Courses -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="courses.html">Course 1</a></li>
+                        <li><a class="dropdown-item" href="#">Course 2</a></li>
+                    </ul>
+                </li>
+
+                <!-- Service -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Service
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Service 1</a></li>
+                        <li><a class="dropdown-item" href="#">Service 2</a></li>
+                    </ul>
+                </li>
+
+                <!-- Portfolio -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Portfolio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="portfolio4.html">Portfolio 1</a></li>
+                        <li><a class="dropdown-item" href="#">Portfolio 2</a></li>
+                    </ul>
+                </li>
+
+                <!-- Student Projects -->
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Student Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Project 1</a></li>
+                        <li><a class="dropdown-item" href="#">Project 2</a></li>
+                    </ul>
+                </li>
+
+                <!-- Contact -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">
+                        Contact
+                    </a>
+                    <!--<ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#">Support</a></li>
+                    </ul>-->
+                </li>
+
+            </ul>
+
+            <!--<a href="tel:+919942202718" class="btn btn-support">
+                Get IT Support
+            </a>-->
+            <a href="https://wa.me/919942202718" target="_blank" class="btn btn-support">
+                WhatsApp Us
+            </a>
+
+        </div>
+    </div>
+</nav>
+<!-- ================= SLIDER ================= -->
+
+<header class="slider">
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="slide">
+                    <img src="slide.jpg" alt="">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                                <ul class="social-icon-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                                <h1>Best Multimedia Courses</h1>
+                                <!--<p>Transform your creativity into professional expertise.</p>-->
+                                <!--<div class="banner-btn">
+                                    <a href="#">Learn More</a>
+                                    <a href="#">Contact Us</a>
+                                </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="slide">
+                    <img src="slide.jpg" alt="">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                                <ul class="social-icon-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                                <h1>Best IT & Tally Learning Hub</h1>
+                                <!--<p>Empowering students to master technology and accounting skills</p>-->
+                                <!--<div class="banner-btn">
+                                    <a href="#">Learn More</a>
+                                    <a href="#">Contact Us</a>
+                                </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= FEATURE SECTION ================= -->
+
+<section class="feature-section pt-100">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Feature 1 -->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                <div class="feature-single-item">
+
+                    <img src="flexible.svg" alt="">
+
+                    <h3>Flexibility &amp; Responsive</h3>
+                    <p>At Phoenix Innovative Computer Center, we offer flexible learning options designed to suit school students, college learners, working professionals, and job seekers.</p>
+                    
+
+                    <!--<div class="extra-content">
+                        <p>
+                            This feature allows your website to adapt perfectly
+                            across desktops, laptops, tablets, and mobiles.
+                        </p>
+                    </div>
+
+                    <div class="feature-btn-box">
+                        <a class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Learn More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                <div class="feature-single-item">
+
+                    <img src="team.svg" alt="">
+
+                    <h3>Expert Trainers</h3>
+                    <p>At Phoenix Innovative Computer Center, our institute is guided by experienced trainers who provide strong mentorship and personal attention to every student success journey.</p>
+                    
+
+                    <!--<div class="extra-content">
+                        <p>
+                            Our teams provide high-quality development support
+                            using modern technologies and agile workflows.
+                        </p>
+                    </div>
+
+                    <div class="feature-btn-box">
+                        <a class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Learn More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                <div class="feature-single-item">
+
+                    <img src="work.svg" alt="">
+
+                    <h3>Industry-Oriented Skills</h3>
+                    <p>At Phoenix Innovative Computer Center, we train students with industry-relevant skills that match current job market demands and build strong professional confidence.</p>
+                    
+
+                    <!--<div class="extra-content">
+                        <p>
+                            We provide scalable business solutions that improve
+                            productivity, customer engagement, and growth.
+                        </p>
+                    </div>
+
+                    <div class="feature-btn-box">
+                        <a class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Learn More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-area section-padding">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    <h6 class="sub-title">About Phoenix Innovative Computer Center</h6> 
+                    <h2>Providing career-focused computer training and quality education is our passion</h2>
+                    <p>We offer expert training in Graphics Designing, Video Editing, VFX, Animation, Programming,Full Stack Development,Web Development, UI/UX Design, Data Science, AI/ML, and Tally to build strong professional careers.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <h6>Multimedia & Animation Training<em>90%</em></h6>
+                            <div class="skill-progress">
+                                <div class="progres" data-value="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h6>Programming & Development Training <em>95%</em></h6>
+                            <div class="skill-progress">
+                                <div class="progres" data-value="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h6>Accounting & Tally ERP Training<em>90%</em></h6>
+                            <div class="skill-progress">
+                                <div class="progres" data-value="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-btn-box"> 
+                        <a class="default-btn" href="about.html">Learn More <span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-image">
+                    <img src="about.jpg" alt="About image">
+                    <div class="years-design">
+                        <h2>27</h2>
+                        <h5>Years Experience</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services-section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+					<div class="section-title">
+						<h6 class="sub-title">What We Offer</h6>
+						<h2>Our Training Programs</h2>
+					</div>
+            </div>
+            <!-- CARD 1 -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-brush"></i>
+                    </div>
+
+                    <h3>Graphic Designing</h3>
+
+                    <p>
+                        Learn professional graphic design
+                         skills for branding and creative projects with modern design techniques.
+                    </p>
+
+                    <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-images"></i>
+                    </div>
+
+                    <h3>Wedding Album Designing</h3>
+
+                    <p>
+                        Create modern wedding album layouts and photo editing
+                        designs using Photoshop and creative tools.
+                    </p>
+
+                    <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-camera-reels"></i>
+                    </div>
+
+                    <h3>Video Editing & Adv</h3>
+
+                    <p>
+                        Learn professional video editing for cinematic storytelling 
+                        with advanced transitions, color grading, and editing techniques.
+                    </p>
+
+                    <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <h3>Visual Effects</h3>
+
+                    <p>
+                         Master cinematic visual effects, compositing,
+                         green screen editing and motion graphics techniques.
+                    </p>
+
+                   <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- CARD 5 -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-film"></i>
+                    </div>
+
+                    <h3>Shortfilm Making</h3>
+
+                    <p>
+                        Learn script writing, camera techniques, editing
+                        and complete short film production workflow.
+                    </p>
+
+                    <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+
+            <!-- CARD 6 -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-badge-3d"></i>
+                    </div>
+
+                    <h3>2D & 3D Animation</h3>
+
+                    <p>
+                        Master 3D modeling, rigging, animation and rendering
+                        for films, games and creative media projects.
+                    </p>
+
+                   <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+            <!-- CARD 7 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+
+                    <h3>Programming Courses</h3>
+
+                      <p>
+                            Learn Python, Java, C, C++, web development
+                            and real-time software programming concepts.
+                    </p>
+
+                   <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+            <!--CARD 7-->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+
+                    <h3>IT Trends</h3>
+
+                  <p>
+                        Explore AI, Machine Learning, Data Science,
+                         Cloud Computing and latest technology innovations.
+                    </p>
+
+                   <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                <div class="single-services-item">
+
+                    <div class="services-icon">
+                        <i class="bi bi-calculator-fill"></i>
+                    </div>
+
+                    <h3>Tally ERP & Prime</h3>
+
+                    <p>
+                        Learn accounting, GST billing, payroll and inventory
+                         management using Tally ERP and Tally Prime.
+                    </p>
+
+                   <!--<div class="services-btn">
+                        <a href="#" class="read-more">
+                            <i class="bi bi-arrow-right-short"></i>
+                            Read More
+                        </a>
+                    </div>-->
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="testimonial-section">
+    <div class="section-title">
+        <h6 class="sub-title">Our Testimonial</h6>
+        <h2>Student Feedback</h2>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <!--<div class="rating-box">⭐⭐⭐⭐⭐</div>-->
+                    <video playsinline controls preload="metadata">
+                        <source src="arun.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>B.Arun Kumar</h3>
+                    <span>Video Editing</span>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <!--<div class="rating-box">⭐⭐⭐⭐⭐</div>-->
+                    <video playsinline controls preload="metadata">
+                        <source src="arun.mp4" type="video/mp4">
+                    </video>
+                    <h3>Mr.A.Bala Subramanian</h3>
+                    <span>Graphics Designing</span>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <!--<div class="rating-box">⭐⭐⭐⭐⭐</div>-->
+                    <video playsinline controls preload="metadata">
+                        <source src="arun.mp4" type="video/mp4">
+                    </video>
+                    <h3>S.Bhagavathi</h3>
+                    <span>Video Editing</span>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <!--<div class="rating-box">⭐⭐⭐⭐⭐</div>-->
+                    <video playsinline controls preload="metadata">
+                        <source src="arun.mp4" type="video/mp4">
+                    </video>
+                    <h3>Ragevenran</h3>
+                    <span>Graphics Designing & video Editing</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <!--<div class="rating-box">⭐⭐⭐⭐⭐</div>-->
+                    <video playsinline controls preload="metadata">
+                        <source src="arun.mp4" type="video/mp4">
+                    </video>
+                    <h3>Sakthi Mohan</h3>
+                    <span>Visual Effects,Python & UI/UX</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <!--<div class="rating-box">⭐⭐⭐⭐⭐</div>-->
+                    <video playsinline controls preload="metadata">
+                        <source src="arun.mp4" type="video/mp4">
+                    </video>
+                    <h3>Sri Ramachandran</h3>
+                    <span>Video Editing</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+/* ================= SWIPER ================= */
+
+var swiper = new Swiper(".mySwiper", {
+
+    loop:true,
+
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+});
+
+/* ================= FEATURE TOGGLE ================= 
+
+document.querySelectorAll(".read-more").forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        const featureItem = this.closest(".feature-single-item");
+
+        featureItem.classList.toggle("expanded");
+
+    });
+
+});*/
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progres");
+
+    progressBars.forEach(bar => {
+        const value = bar.getAttribute("data-value");
+        bar.style.width = value;
+    });
+});
+</script>
+<script>
+    const testimonial_swiper = new Swiper(".testimonial-slider", {
+
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+
+    speed: 4000,
+
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+
+    grabCursor: true,
+    allowTouchMove: true,
+    simulateTouch: true,
+    touchRatio: 1,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        600: {
+            slidesPerView: 2
+        },
+        1000: {
+            slidesPerView: 3
+        }
+    }
+
+});
+const videos = document.querySelectorAll('.single-testimonial video');
+
+videos.forEach(video => {
+
+    video.addEventListener('play', () => {
+
+        testimonial_swiper.autoplay.stop();
+
+        videos.forEach(v => {
+            if(v !== video){
+                v.pause();
+            }
+        });
+
+    });
+
+    video.addEventListener('pause', () => {
+
+        testimonial_swiper.autoplay.start();
+
+    });
+
+    video.addEventListener('ended', () => {
+
+        testimonial_swiper.autoplay.start();
+
+    });
+
+});
+// Optional: You can add click-to-play if needed
+/*document.querySelectorAll('.single-testimonial video').forEach(video => {
+    video.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+});
+document.querySelectorAll('.single-testimonial video').forEach(video => {
+    video.addEventListener('play', () => {
+        document.querySelectorAll('.single-testimonial video').forEach(v => {
+            if (v !== video) {
+                v.pause();
+            }
+        });
+    });
+});
+*/
+</script>
+
+</body>
+</html>
